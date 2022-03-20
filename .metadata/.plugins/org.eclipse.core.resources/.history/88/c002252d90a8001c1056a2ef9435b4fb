@@ -1,0 +1,6 @@
+package com.gamecenter.sa.osgi.gamemanageservice;
+
+public interface GameManageService {
+	public int addGame(String gameName, String gameProvider, String gameYear, Double gamePrice);
+	public int updateGame(String updateGameName, String updateGameProvider, String updateGameYear, Double updateGamePrice);
+}

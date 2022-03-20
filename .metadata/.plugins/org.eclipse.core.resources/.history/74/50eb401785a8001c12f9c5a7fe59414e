@@ -1,0 +1,6 @@
+package com.mtit.service.servicepublisher;
+
+public interface ServicePublish {
+
+	public String publishService();
+}

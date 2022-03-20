@@ -1,0 +1,25 @@
+package com.gamecenter.sa.osgi.gameserviceproducer;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
+
+import com.gamecenter.sa.osgi.gameservice.GameService;
+import com.gamecenter.sa.osgi.gameservice.GameServiceImpl;
+
+public class GameServiceProducerActivator implements BundleActivator {
+
+	ServiceRegistration serviceRegisterer;
+	
+	public void start(BundleContext bundleContext) throws Exception {
+		System.out.println("============Supermarket service started.============");
+		GameService gameService = new GameServiceImpl();
+		serviceRegisterer = bundleContext.registerService(GameService.class.getName(), gameService, null);
+	}
+
+	public void stop(BundleContext bundleContext) throws Exception {
+		System.out.println("==============Supermarket service closed.=============");
+		serviceRegisterer.unregister();
+	}
+
+}

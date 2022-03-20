@@ -1,0 +1,34 @@
+package com.gamecenter.sa.osgi.gameservice;
+
+import java.util.HashMap;
+
+public class GameServiceImpl implements GameService{
+	
+	private List<Item> itemList = DataStore.itemsList;
+
+	@Override
+	public HashMap<Integer, String> displayGame() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int GenerateGameBill(int id, int quantity) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double displayBillTotal() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String[][] displayBill() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

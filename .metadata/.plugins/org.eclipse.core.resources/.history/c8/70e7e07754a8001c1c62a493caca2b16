@@ -1,0 +1,15 @@
+package com.gamecenter.client;
+
+public class ClientServiceImpl implements ClientService{
+
+	@Override
+	public String clientService() {
+		return "Client Service Started";
+	}
+
+	@Override
+	public String clientServicePublisher() {
+		return "Execute Client Service publisher";
+	}
+
+}

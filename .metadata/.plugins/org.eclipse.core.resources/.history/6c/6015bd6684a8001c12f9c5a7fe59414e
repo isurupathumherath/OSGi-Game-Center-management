@@ -1,0 +1,7 @@
+package servicepublisher;
+
+public class ServicePublishImpl implements ServicePublish{
+	
+	
+
+}

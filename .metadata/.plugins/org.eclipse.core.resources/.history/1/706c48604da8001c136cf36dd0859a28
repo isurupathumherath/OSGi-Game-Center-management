@@ -1,0 +1,5 @@
+package com.gamecenter.client;
+
+public class ClientModel {
+
+}

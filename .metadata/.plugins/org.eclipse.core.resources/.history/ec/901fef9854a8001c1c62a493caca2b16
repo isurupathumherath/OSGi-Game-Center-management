@@ -1,0 +1,24 @@
+package com.gamecenter.client;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
+
+public class ClientActivator implements BundleActivator {
+	
+	ServiceRegistration serviceRegistration;
+
+	@Override
+	public void start(BundleContext context) throws Exception {
+		System.out.println("Client Service Start");
+		ClientService clientservice = new ClientServiceImpl();
+		serviceRegistration = context.registerService(ClientService.class.getName(), clientservice, null);
+	}
+
+	@Override
+	public void stop(BundleContext arg0) throws Exception {
+		System.out.println("Client Service Stop");
+		serviceRegistration.unregister();
+	}
+
+}

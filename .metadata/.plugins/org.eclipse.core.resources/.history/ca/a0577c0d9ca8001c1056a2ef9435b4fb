@@ -1,0 +1,13 @@
+package com.gamecenter.sa.osgi.gamemanageservice;
+
+import java.util.List;
+
+import com.gamecenter.sa.osgi.model.Game;
+
+public interface GameManageService {
+	public String addGame(String gameName, String gameProvider, String gameYear, Double gamePrice);
+	public int updateGame(String updateGameName, String updateGameProvider, String updateGameYear, Double updateGamePrice);
+	public int removeGame(String gameName);
+	public int searchGame(String gameName);
+	public List<Game> listGame();
+}

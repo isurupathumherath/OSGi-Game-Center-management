@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ServiceClient
+Bundle-SymbolicName: ServiceClient
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.gamecenter.client.ClientActivator
+Export-package: com.gamecenter.client
+Import-Package: com.gamecenter.client,
+ org.osgi.framework
+Bundle-RequiredExecutionEnvironment: JavaSE-15

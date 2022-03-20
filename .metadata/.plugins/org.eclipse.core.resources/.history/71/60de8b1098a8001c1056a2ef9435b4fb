@@ -1,0 +1,20 @@
+package com.gamecenter.sa.osgi.managerconsumer;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+public class ManagerConsumerActivator implements BundleActivator {
+
+	ServiceReference gameManagerServiceReference;
+
+	public void start(BundleContext bundleContext) throws Exception {
+		System.out.println("============Game Center Manager Consumer Started.============");
+		gameManagerServiceReference = bundleContext.getServiceReference(GameManageService.class.getName());
+	}
+
+	public void stop(BundleContext bundleContext) throws Exception {
+		ManagerConsumerActivator.context = null;
+	}
+
+}

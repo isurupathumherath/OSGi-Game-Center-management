@@ -1,0 +1,20 @@
+package com.gamecenter.sa.osgi.customerconsumer;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+public class CustomerConsumerActivator implements BundleActivator {
+
+	ServiceReference gameCustomerServiceReference;
+
+	public void start(BundleContext bundleContext) throws Exception {
+		System.out.println("============Customer consumer started.============");
+		gameCustomerServiceReference = bundleContext.getServiceReference(null)
+	}
+
+	public void stop(BundleContext bundleContext) throws Exception {
+		CustomerConsumerActivator.context = null;
+	}
+
+}

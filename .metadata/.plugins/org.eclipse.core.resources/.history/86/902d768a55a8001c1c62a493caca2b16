@@ -1,0 +1,43 @@
+package com.gamecenter.client;
+
+public class ClientModel {
+	
+	String Id;
+	String Name;
+	String Address;
+	String NIC;
+	String PromoCode;
+	public String getId() {
+		return Id;
+	}
+	public void setId(String id) {
+		Id = id;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	public String getNIC() {
+		return NIC;
+	}
+	public void setNIC(String nIC) {
+		NIC = nIC;
+	}
+	public String getPromoCode() {
+		return PromoCode;
+	}
+	public void setPromoCode(String promoCode) {
+		PromoCode = promoCode;
+	}
+	
+	
+
+}

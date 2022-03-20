@@ -1,0 +1,42 @@
+package com.gamecenter.sa.osgi.gamemanageservice;
+
+import java.util.List;
+
+import com.gamecenter.sa.osgi.datastore.DataStore;
+import com.gamecenter.sa.osgi.model.Game;
+
+public class GameManageServiceImpl implements GameManageService{
+
+	@Override
+	public String addGame(String gameName, String gameProvider, String gameYear, Double gamePrice) {
+		int itemCount = DataStore.gameList.size();
+		Game game = new Game(itemCount + 1, gameName, gameProvider, gameYear, gamePrice);
+		DataStore.gameList.add(game);
+		return gameName + " is added under " + (itemCount + 1) + "number";
+	}
+
+	@Override
+	public synchronized int updateGame(String updateGameName, String updateGameProvider, String updateGameYear,
+			Double updateGamePrice) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public synchronized int removeGame(String gameName) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int searchGame(String gameName) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Game> listGame() {
+		return DataStore.gameList;
+	}
+
+}

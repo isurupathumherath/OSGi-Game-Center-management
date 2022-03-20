@@ -1,0 +1,36 @@
+package com.gamecenter.sa.osgi.managerconsumer;
+
+import java.util.Scanner;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+import com.gamecenter.sa.osgi.gamemanageservice.GameManageService;
+
+public class ManagerConsumerActivator implements BundleActivator {
+
+	ServiceReference gameManagerServiceReference;
+	Scanner scanner = new Scanner(System.in);
+
+	@Override
+	public void start(BundleContext bundleContext) throws Exception {
+		System.out.println("============Game Center Manager Consumer Started.============");
+		gameManagerServiceReference = bundleContext.getServiceReference(GameManageService.class.getName());
+		GameManageService gameManageService = (GameManageService)bundleContext.getService(gameManagerServiceReference);
+		
+		
+		int selection = scanner.nextInt();
+		while()
+		
+		System.out.println(gameManageService.addGame("GameName", "GameProvider", "GameYear", 100.89));
+		System.out.println(gameManageService.listGame().size());
+	}
+
+	@Override
+	public void stop(BundleContext bundleContext) throws Exception {
+		System.out.println("============Game Center Manager Consumer Stopped.============");
+		bundleContext.ungetService(gameManagerServiceReference);
+	}
+
+}
