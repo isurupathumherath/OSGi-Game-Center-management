@@ -31,7 +31,9 @@ public class ManagerConsumerActivator implements BundleActivator {
 			String gameName, gameProvider, gameYear, updateGameName, updateGameProvider, updateGameYear;
 			double gamePrice, updateGamePrice;
 			
-			System.out.println("...Options to be Selected...");
+			optionScanner.nextLine();
+			
+			System.out.println("\n...Options to be Selected...");
 			System.out.println("1.Add New Game");
 			System.out.println("2.Update a Game");
 			System.out.println("3.Delete a Game");
@@ -39,7 +41,7 @@ public class ManagerConsumerActivator implements BundleActivator {
 			System.out.println("5.Search Games");
 			System.out.println("0.Exit");
 			
-			System.out.print("Please Select: ");
+			System.out.print("\nPlease Select: ");
 			option = scanner.nextInt();
 			
 			if(option == 0)
@@ -111,7 +113,7 @@ public class ManagerConsumerActivator implements BundleActivator {
 			else if(option == 4) {
 				List<Game> gameList =gameManageService.listGame();
 				System.out.println("-----------------------------------Game List--------------------------------------------");
-				System.out.println("Game ID"+"\t" + "Game Name" + "\t" + "Game Provider" + "\t" + "Game Year" + "\t" + "Game Price" + "\t");
+				System.out.println("Game ID|"+"\t" + "Game Name|" + "\t" + "Game Provider|" + "\t" + "Game Year|" + "\t" + "Game Price|" + "\t");
 				for(Game game : gameList)  
 					  System.out.println(game.getGameId()+"\t\t"+game.getGameName()+"\t\t"+game.getGameProvider()+"\t\t"+game.getGameYear()+"\t\t"+game.getGamePrice()+"\t\t");  
 				System.out.println("-----------------------------------------------------------------------------------------");
@@ -120,25 +122,16 @@ public class ManagerConsumerActivator implements BundleActivator {
 			
 				System.out.println("Game Name need to be Searched: ");
 				gameName = optionScanner.nextLine();
-				boolean loop = true;
 				
-				while(gameName != null && loop) {
-					Game game = gameManageService.searchGame(gameName);
-					if(gameName != null) {
-						System.out.println("Game ID: " + game.getGameId());
-						System.out.println("Game Name: " + game.getGameName());
-						System.out.println("Game Provider: " + game.getGameProvider());
-						System.out.println("Game Price: " + game.getGamePrice());
-					}
-					else {
-						System.out.println("Game is not found");
-					}
-					System.out.println("Do you want to search again? (Y/N) : ");
-					String result = optionScanner.nextLine();
-					if(result.equals("Y"))
-						loop = false;
-					else if(result.equals("N"))
-						loop = true;
+				Game game = gameManageService.searchGame(gameName);
+				if(game != null) {
+					System.out.println("Game ID: " + game.getGameId());
+					System.out.println("Game Name: " + game.getGameName());
+					System.out.println("Game Provider: " + game.getGameProvider());
+					System.out.println("Game Price: " + game.getGamePrice());
+				}
+				else {
+					System.out.println("Game is not found");
 				}
 			}
 		}

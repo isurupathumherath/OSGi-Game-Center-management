@@ -4,7 +4,8 @@ Bundle-Name: Gameservice
 Bundle-SymbolicName: com.gamecenter.sa.osgi.gameservice
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.gamecenter.sa.osgi.gameserviceproducer.GameServiceProducerActivator
-Export-Package: com.gamecenter.sa.osgi.gamemanageservice,
+Export-Package: com.gamecenter.sa.osgi.datastore,
+ com.gamecenter.sa.osgi.gamemanageservice,
  com.gamecenter.sa.osgi.gameservice,
  com.gamecenter.sa.osgi.model
 Import-Package: com.gamecenter.sa.osgi.gamemanageservice,
