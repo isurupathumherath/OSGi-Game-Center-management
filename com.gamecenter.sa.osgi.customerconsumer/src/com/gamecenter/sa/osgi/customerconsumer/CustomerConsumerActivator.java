@@ -21,6 +21,8 @@ public class CustomerConsumerActivator implements BundleActivator {
 
 	@Override
 	public void start(BundleContext bundleContext) throws Exception {
+		
+		//test comment
 		System.out.println("============Customer consumer started.============");
 		gameCustomerServiceReference = bundleContext.getServiceReference(GameService.class.getName());
 		GameService gameService = (GameService)bundleContext.getService(gameCustomerServiceReference);
