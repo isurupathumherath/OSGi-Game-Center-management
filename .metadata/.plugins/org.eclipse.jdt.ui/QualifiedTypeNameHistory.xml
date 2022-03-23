@@ -3,4 +3,11 @@
     <fullyQualifiedTypeName name="org.osgi.framework.ServiceRegistration"/>
     <fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
     <fullyQualifiedTypeName name="com.mtit.service.ServicePublish"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.awt.Component"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.gamecenter.sa.osgi.dataStore.Computer"/>
+    <fullyQualifiedTypeName name="com.gamecenter.sa.osgi.componentBill.DataStore"/>
 </qualifiedTypeNameHistroy>

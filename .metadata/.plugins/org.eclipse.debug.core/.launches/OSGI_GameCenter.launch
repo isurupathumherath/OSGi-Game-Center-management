@@ -24,7 +24,6 @@
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=true -Declipse.ignoreApp=true -Dosgi.noShutdown=true"/>
     <stringAttribute key="pde.version" value="3.3"/>
     <setAttribute key="selected_target_bundles">
-        <setEntry value="biz.aQute.bnd.util@default:default"/>
         <setEntry value="biz.aQute.bndlib@default:default"/>
         <setEntry value="ch.qos.logback.classic@default:default"/>
         <setEntry value="ch.qos.logback.core@default:default"/>
@@ -38,19 +37,12 @@
         <setEntry value="com.ibm.icu@default:default"/>
         <setEntry value="com.jcraft.jsch@default:default"/>
         <setEntry value="com.sun.el@default:default"/>
-        <setEntry value="com.sun.jna*4.5.1.v20210503-0343@default:default"/>
-        <setEntry value="com.sun.jna*5.8.0.v20210503-0343@default:default"/>
         <setEntry value="com.sun.jna.platform*4.5.1.v20190425-1842@default:default"/>
-        <setEntry value="com.sun.jna.platform*5.8.0.v20210406-1004@default:default"/>
         <setEntry value="com.sun.xml.bind*2.2.0.v20201118-1845@default:default"/>
         <setEntry value="com.sun.xml.bind*2.3.3.v20201118-1818@default:default"/>
         <setEntry value="jakarta.el@default:default"/>
-        <setEntry value="jakarta.enterprise.cdi-api@default:default"/>
-        <setEntry value="jakarta.interceptor-api@default:default"/>
-        <setEntry value="jakarta.servlet-api@default:default"/>
         <setEntry value="jakarta.servlet.jsp@default:default"/>
         <setEntry value="jakarta.servlet@default:default"/>
-        <setEntry value="jakarta.transaction-api@default:default"/>
         <setEntry value="jakarta.xml.bind@default:default"/>
         <setEntry value="java_cup.runtime@default:default"/>
         <setEntry value="javaewah@default:default"/>
@@ -93,10 +85,6 @@
         <setEntry value="org.apache.felix.gogo.runtime@default:default"/>
         <setEntry value="org.apache.felix.gogo.shell@default:default"/>
         <setEntry value="org.apache.felix.scr@1:true"/>
-        <setEntry value="org.apache.httpcomponents.client5.httpclient5-win@default:default"/>
-        <setEntry value="org.apache.httpcomponents.client5.httpclient5@default:default"/>
-        <setEntry value="org.apache.httpcomponents.core5.httpcore5-h2@default:default"/>
-        <setEntry value="org.apache.httpcomponents.core5.httpcore5@default:default"/>
         <setEntry value="org.apache.httpcomponents.httpclient.win@default:default"/>
         <setEntry value="org.apache.httpcomponents.httpclient@default:default"/>
         <setEntry value="org.apache.httpcomponents.httpcore@default:default"/>
@@ -284,7 +272,6 @@
         <setEntry value="org.eclipse.datatools.sqltools.sqlscrapbook@default:default"/>
         <setEntry value="org.eclipse.datatools.sqltools.tabledataeditor@default:default"/>
         <setEntry value="org.eclipse.debug.core@default:default"/>
-        <setEntry value="org.eclipse.debug.ui.launchview@default:default"/>
         <setEntry value="org.eclipse.debug.ui@default:default"/>
         <setEntry value="org.eclipse.draw2d@default:default"/>
         <setEntry value="org.eclipse.e4.core.commands@default:default"/>
@@ -295,8 +282,6 @@
         <setEntry value="org.eclipse.e4.core.di@default:default"/>
         <setEntry value="org.eclipse.e4.core.services@default:default"/>
         <setEntry value="org.eclipse.e4.emf.xpath@default:default"/>
-        <setEntry value="org.eclipse.e4.tools.emf.ui@default:default"/>
-        <setEntry value="org.eclipse.e4.tools.services@default:default"/>
         <setEntry value="org.eclipse.e4.ui.bindings@default:default"/>
         <setEntry value="org.eclipse.e4.ui.css.core@default:default"/>
         <setEntry value="org.eclipse.e4.ui.css.swt.theme@default:default"/>
@@ -315,8 +300,6 @@
         <setEntry value="org.eclipse.e4.ui.workbench@default:default"/>
         <setEntry value="org.eclipse.ecf.filetransfer@default:default"/>
         <setEntry value="org.eclipse.ecf.identity@default:default"/>
-        <setEntry value="org.eclipse.ecf.provider.filetransfer.httpclient5.win32@default:default"/>
-        <setEntry value="org.eclipse.ecf.provider.filetransfer.httpclient5@default:default"/>
         <setEntry value="org.eclipse.ecf.provider.filetransfer.ssl@default:false"/>
         <setEntry value="org.eclipse.ecf.provider.filetransfer@default:default"/>
         <setEntry value="org.eclipse.ecf.ssl@default:false"/>
@@ -425,7 +408,6 @@
         <setEntry value="org.eclipse.help.ui@default:default"/>
         <setEntry value="org.eclipse.help.webapp@default:default"/>
         <setEntry value="org.eclipse.help@default:default"/>
-        <setEntry value="org.eclipse.jdt.annotation*1.2.0.v20210519-0438@default:default"/>
         <setEntry value="org.eclipse.jdt.annotation*2.2.600.v20200408-1511@default:default"/>
         <setEntry value="org.eclipse.jdt.apt.core@default:default"/>
         <setEntry value="org.eclipse.jdt.apt.pluggable.core@default:default"/>
@@ -455,8 +437,6 @@
         <setEntry value="org.eclipse.jem@default:default"/>
         <setEntry value="org.eclipse.jetty.http@default:default"/>
         <setEntry value="org.eclipse.jetty.io@default:default"/>
-        <setEntry value="org.eclipse.jetty.jndi@default:default"/>
-        <setEntry value="org.eclipse.jetty.plus@default:default"/>
         <setEntry value="org.eclipse.jetty.security@default:default"/>
         <setEntry value="org.eclipse.jetty.server@default:default"/>
         <setEntry value="org.eclipse.jetty.servlet@default:default"/>
@@ -471,7 +451,6 @@
         <setEntry value="org.eclipse.jgit.archive@default:default"/>
         <setEntry value="org.eclipse.jgit.gpg.bc@default:false"/>
         <setEntry value="org.eclipse.jgit.http.apache@default:default"/>
-        <setEntry value="org.eclipse.jgit.ssh.apache.agent@default:false"/>
         <setEntry value="org.eclipse.jgit.ssh.apache@default:default"/>
         <setEntry value="org.eclipse.jgit@default:default"/>
         <setEntry value="org.eclipse.jpt.common.branding@default:default"/>
@@ -619,7 +598,6 @@
         <setEntry value="org.eclipse.m2e.core.ui@default:default"/>
         <setEntry value="org.eclipse.m2e.core@default:default"/>
         <setEntry value="org.eclipse.m2e.discovery@default:default"/>
-        <setEntry value="org.eclipse.m2e.editor.lemminx@default:default"/>
         <setEntry value="org.eclipse.m2e.editor@default:default"/>
         <setEntry value="org.eclipse.m2e.importer@default:default"/>
         <setEntry value="org.eclipse.m2e.jdt.ui@default:false"/>
@@ -632,7 +610,6 @@
         <setEntry value="org.eclipse.m2e.maven.runtime.slf4j.simple@default:default"/>
         <setEntry value="org.eclipse.m2e.maven.runtime@default:default"/>
         <setEntry value="org.eclipse.m2e.model.edit@default:default"/>
-        <setEntry value="org.eclipse.m2e.pde.connector@default:default"/>
         <setEntry value="org.eclipse.m2e.pde.ui@default:default"/>
         <setEntry value="org.eclipse.m2e.pde@default:default"/>
         <setEntry value="org.eclipse.m2e.profiles.core@default:default"/>
@@ -755,12 +732,6 @@
         <setEntry value="org.eclipse.pde.junit.runtime@default:default"/>
         <setEntry value="org.eclipse.pde.launching@default:default"/>
         <setEntry value="org.eclipse.pde.runtime@default:default"/>
-        <setEntry value="org.eclipse.pde.spy.bundle@default:default"/>
-        <setEntry value="org.eclipse.pde.spy.context@default:default"/>
-        <setEntry value="org.eclipse.pde.spy.core@default:default"/>
-        <setEntry value="org.eclipse.pde.spy.css@default:default"/>
-        <setEntry value="org.eclipse.pde.spy.model@default:default"/>
-        <setEntry value="org.eclipse.pde.spy.preferences@default:default"/>
         <setEntry value="org.eclipse.pde.ua.core@default:default"/>
         <setEntry value="org.eclipse.pde.ua.ui@default:default"/>
         <setEntry value="org.eclipse.pde.ui.templates@default:default"/>
@@ -953,15 +924,11 @@
         <setEntry value="org.junit.platform.launcher@default:default"/>
         <setEntry value="org.junit.platform.runner@default:default"/>
         <setEntry value="org.junit.platform.suite.api@default:default"/>
-        <setEntry value="org.junit.platform.suite.commons@default:default"/>
-        <setEntry value="org.junit.platform.suite.engine@default:default"/>
         <setEntry value="org.junit.vintage.engine@default:default"/>
         <setEntry value="org.junit@default:default"/>
         <setEntry value="org.objectweb.asm*9.1.0.v20210209-1849@default:default"/>
-        <setEntry value="org.objectweb.asm*9.2.0.v20210813-1119@default:default"/>
         <setEntry value="org.objectweb.asm.commons@default:default"/>
         <setEntry value="org.objectweb.asm.tree*9.1.0.v20210209-1849@default:default"/>
-        <setEntry value="org.objectweb.asm.tree*9.2.0.v20210813-1119@default:default"/>
         <setEntry value="org.opentest4j@default:default"/>
         <setEntry value="org.sat4j.core@default:default"/>
         <setEntry value="org.sat4j.pb@default:default"/>
@@ -975,6 +942,8 @@
         <setEntry value="org.w3c.dom.svg@default:default"/>
     </setAttribute>
     <setAttribute key="selected_workspace_bundles">
+        <setEntry value="com.gamecenter.sa.osgi.computercomponentSaler@default:default"/>
+        <setEntry value="com.gamecenter.sa.osgi.computercomponentSalerProducer@default:default"/>
         <setEntry value="com.gamecenter.sa.osgi.customerconsumer@default:default"/>
         <setEntry value="com.gamecenter.sa.osgi.gameservice@default:default"/>
         <setEntry value="com.gamecenter.sa.osgi.managerconsumer@default:default"/>
