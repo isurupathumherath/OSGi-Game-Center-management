@@ -1,5 +1,0 @@
-package com.gamecenter.sa.osgi.gamemanageservice;
-
-public interface GameManageService {
-
-}

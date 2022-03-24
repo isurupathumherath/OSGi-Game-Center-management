@@ -1,7 +1,0 @@
-package com.gamecenter.client;
-
-public interface ClientService {
-	
-	public String clientService();
-
-}

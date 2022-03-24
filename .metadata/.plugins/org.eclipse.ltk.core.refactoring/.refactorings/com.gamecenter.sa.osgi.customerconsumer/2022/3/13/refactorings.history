@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.gamecenter.sa.osgi.customerconsumer.Activator&apos; to &apos;CustomerConsumerActivator&apos;&#x0D;&#x0A;- Original project: &apos;com.gamecenter.sa.osgi.customerconsumer&apos;&#x0D;&#x0A;- Original element: &apos;com.gamecenter.sa.osgi.customerconsumer.Activator&apos;&#x0D;&#x0A;- Renamed element: &apos;com.gamecenter.sa.osgi.customerconsumer.CustomerConsumerActivator&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Activator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.gamecenter.sa.osgi.customerconsumer{Activator.java[Activator" matchStrategy="1" name="CustomerConsumerActivator" qualified="false" references="true" similarDeclarations="false" stamp="1647807920932" textual="false" version="1.0"/>
-</session>

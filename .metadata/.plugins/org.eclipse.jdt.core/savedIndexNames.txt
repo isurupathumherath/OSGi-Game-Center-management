@@ -1,9 +1,0 @@
-INDEX VERSION 1.131+F:\SLIIT_3RD YR LABS\OSGi-Game-Center-management\.metadata\.plugins\org.eclipse.jdt.core
-959546786.index
-1603120023.index
-3841760030.index
-3524650359.index
-2777944041.index
-617290997.index
-1271459746.index
-4291861142.index
