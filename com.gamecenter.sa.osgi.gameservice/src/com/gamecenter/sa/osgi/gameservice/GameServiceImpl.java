@@ -24,6 +24,7 @@ public class GameServiceImpl implements GameService{
 			count ++;
 			if(game.getGameName().equals(gameName)) {
 				cart.put(game.getGameId(), quantity);
+				value = true;
 				break;
 			}
 		}
@@ -40,20 +41,38 @@ public class GameServiceImpl implements GameService{
 	}
 
 	@Override
-	public int GenerateGameBill(int id, int quantity) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
 	public double displayBillTotal() {
-		// TODO Auto-generated method stub
-		return 0;
+		HashMap<Integer, Integer> cartMap = displayCart();
+		List<Game> gameList = itemList;
+		double total = 0;
+		
+		for (Integer i : cartMap.keySet()) {
+			for(Game game : gameList) {
+				if(game.getGameId() == i) {
+					total = game.getGamePrice() * cartMap.get(i);
+					break;
+				}
+			}
+		}
+		return total;
 	}
 
 	@Override
-	public String[][] displayBill() {
-		// TODO Auto-generated method stub
-		return null;
+	public String removeFromCart(String gameName) {
+		int count = -1;
+		boolean value = false;
+		for(Game game : DataStore.gameList) {
+			count ++;
+			if(game.getGameName().equals(gameName)) {
+				cart.remove(game.getGameId());
+				value = true;
+				break;
+			}
+		}
+		
+		if(value)
+			return "Item cannot be found. Please try again!";
+		else
+			return "Item is removed from cart successfully";
 	}
 }

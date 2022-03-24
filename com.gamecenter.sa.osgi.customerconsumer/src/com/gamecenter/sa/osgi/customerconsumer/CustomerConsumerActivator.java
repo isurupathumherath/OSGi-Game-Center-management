@@ -21,7 +21,7 @@ public class CustomerConsumerActivator implements BundleActivator {
 
 	@Override
 	public void start(BundleContext bundleContext) throws Exception {
-		System.out.println("============Customer consumer started.============");
+		System.out.println("============Customer Consumer Started.============");
 		gameCustomerServiceReference = bundleContext.getServiceReference(GameService.class.getName());
 		GameService gameService = (GameService)bundleContext.getService(gameCustomerServiceReference);
 		
@@ -31,10 +31,12 @@ public class CustomerConsumerActivator implements BundleActivator {
 			
 			optionScanner.nextLine();
 			
-			System.out.println("\n...Options to be Selected...");
+			System.out.println("\n...Options to be Selected...\n");
 			System.out.println("1.Game List");
 			System.out.println("2.Add Game to Cart");
 			System.out.println("3.Display Cart");
+			System.out.println("4.Display Total Price");
+			System.out.println("5.Remove from Cart");
 			System.out.println("0.Exit");
 			
 			System.out.print("\nPlease Select: ");
@@ -44,11 +46,11 @@ public class CustomerConsumerActivator implements BundleActivator {
 				exit = true;
 			else if(option == 1) {
 				List<Game> gameList =gameService.displayGame();
-				System.out.println("-----------------------------------Game List--------------------------------------------");
+				System.out.println("-----------------------------------Game List--------------------------------------------\n");
 				System.out.println("Game ID|"+"\t" + "Game Name|" + "\t" + "Game Provider|" + "\t" + "Game Year|" + "\t" + "Game Price|" + "\t");
 				for(Game game : gameList)  
 					  System.out.println(game.getGameId()+"\t\t"+game.getGameName()+"\t\t"+game.getGameProvider()+"\t\t"+game.getGameYear()+"\t\t"+game.getGamePrice()+"\t\t");  
-				System.out.println("-----------------------------------------------------------------------------------------");
+				System.out.println("\n-----------------------------------------------------------------------------------------");
 			}
 			else if(option == 2) {
 				System.out.print("Game Name: ");
@@ -61,19 +63,43 @@ public class CustomerConsumerActivator implements BundleActivator {
 			}
 			else if(option == 3) {
 				HashMap<Integer, Integer> cartMap = gameService.displayCart();
-				List<Game> gameList =gameService.displayGame();
+				List<Game> gameList = gameService.displayGame();
 				
-				System.out.println("-----------------------------------Game List--------------------------------------------");
-				System.out.println("Game ID|"+"\t" + "Game Name|" + "\t" + "Quantity|" + "\t");
+				System.out.println("-----------------------------------Game List--------------------------------------------\n");
+				System.out.println("Game ID|"+"\t" + "Game Name|" + "\t" + "Quantity|" + "\t" + "Unit Price|" + "\t");
 				for (Integer i : cartMap.keySet()) {
 					for(Game game : gameList) {
 						if(game.getGameId() == i) {
-							System.out.println(i + "\t\t" + game.getGameName() + "\t\t" + cartMap.get(i) +"\t\t");
+							System.out.println(i + "\t\t" + game.getGameName() + "\t\t" + cartMap.get(i) +"\t\t" + game.getGamePrice() + "\t\t");
 							break;
 						}
 					}
 				}
+				System.out.println("\n-----------------------------------------------------------------------------------------");
+			}
+			else if(option == 4) {
+				HashMap<Integer, Integer> cartMap = gameService.displayCart();
+				List<Game> gameList = gameService.displayGame();
+				
+				System.out.println("-----------------------------------Game List--------------------------------------------\n");
+				System.out.println("Game ID|"+"\t" + "Game Name|" + "\t" + "Quantity|" + "\t" + "Unit Price|" + "\t" + "Total Price(Rs.)|" + "\t");
+				for (Integer i : cartMap.keySet()) {
+					for(Game game : gameList) {
+						if(game.getGameId() == i) {
+							System.out.println(i + "\t\t" + game.getGameName() + "\t\t" + cartMap.get(i) +"\t\t" + game.getGamePrice() + "\t\t" + game.getGamePrice()*cartMap.get(i) + "\t\t");
+							break;
+						}
+					}
+				}
+				System.out.println("\n-----------------------------------------------------------------------------------------");
+				System.out.printf("Total Price for Bill: Rs. %.2f\n", gameService.displayBillTotal());
 				System.out.println("-----------------------------------------------------------------------------------------");
+			}
+			else if(option == 5) {
+				System.out.print("Game Name: ");
+				gameName = optionScanner.nextLine();
+				
+				System.out.println(gameService.removeFromCart(gameName));
 			}
 		}
 		while(!exit);
@@ -81,7 +107,7 @@ public class CustomerConsumerActivator implements BundleActivator {
 
 	@Override
 	public void stop(BundleContext bundleContext) throws Exception {
-		System.out.println("============Customer consumer stopped.============");
+		System.out.println("\n============Customer Consumer Stopped.============");
 		bundleContext.ungetService(gameCustomerServiceReference);
 	}
 

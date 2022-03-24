@@ -14,7 +14,7 @@ public class GameServiceProducerActivator implements BundleActivator {
 	ServiceRegistration serviceRegisterer;
 	
 	public void start(BundleContext bundleContext) throws Exception {
-		System.out.println("============Supermarket service started.============");
+		System.out.println("============Game Center Service Started.============");
 		GameService gameService = new GameServiceImpl();
 		serviceRegisterer = bundleContext.registerService(GameService.class.getName(), gameService, null); //Register GameService
 		GameManageService gameManageService = new GameManageServiceImpl();
@@ -22,7 +22,7 @@ public class GameServiceProducerActivator implements BundleActivator {
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
-		System.out.println("==============Supermarket service closed.=============");
+		System.out.println("============Game Center Service Stopped.=============");
 		serviceRegisterer.unregister(); //Unregister from GameServiceProducter
 	}
 

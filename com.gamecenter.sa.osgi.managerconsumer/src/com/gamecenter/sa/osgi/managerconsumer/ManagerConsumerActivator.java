@@ -23,7 +23,6 @@ public class ManagerConsumerActivator implements BundleActivator {
 		System.out.println("============Game Center Manager Consumer Started.============");
 		gameManagerServiceReference = bundleContext.getServiceReference(GameManageService.class.getName());
 		GameManageService gameManageService = (GameManageService)bundleContext.getService(gameManagerServiceReference);
-		System.out.println("----------------------------Welcome to Game Center Management-------------------------------");
 		
 		do {
 			int option = -1;
@@ -33,7 +32,7 @@ public class ManagerConsumerActivator implements BundleActivator {
 			
 			optionScanner.nextLine();
 			
-			System.out.println("\n...Options to be Selected...");
+			System.out.println("\n...Options to be Selected...\n");
 			System.out.println("1.Add New Game");
 			System.out.println("2.Update a Game");
 			System.out.println("3.Delete a Game");

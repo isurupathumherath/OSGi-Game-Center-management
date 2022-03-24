@@ -1,1 +1,6 @@
 1647806270534	Delete 2 resources
+1648092255011	Rename resource 'com.gamecenter.sa.osgi.gameservice'
+1648092290278	Rename resource 'com.gamecenter.sa.osgi.gameserviceproducer'
+1648092334168	Delete resource 'com.gamecenter.sa.osgi.gamediscountservice'
+1648094778781	Delete 2 resources
+1648099036056	Delete resource 'com.gamecenter.sa.osgi.gamecentermian'

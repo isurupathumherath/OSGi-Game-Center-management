@@ -6,6 +6,8 @@ ch.qos.logback.classic,1.2.3.v20200428-2012,file:/C:/Users/Pathum/.p2/pool/plugi
 ch.qos.logback.core,1.2.3.v20200428-2012,file:/C:/Users/Pathum/.p2/pool/plugins/ch.qos.logback.core_1.2.3.v20200428-2012.jar,4,true
 ch.qos.logback.slf4j,1.2.3.v20200428-2012,file:/C:/Users/Pathum/.p2/pool/plugins/ch.qos.logback.slf4j_1.2.3.v20200428-2012.jar,4,false
 com.gamecenter.sa.osgi.customerconsumer,1.0.0.qualifier,file:/D:/Education/SA_Project/com.gamecenter.sa.osgi.customerconsumer/,4,true
+com.gamecenter.sa.osgi.customermanagerconsumer,1.0.0.qualifier,file:/D:/Education/SA_Project/com.gamecenter.sa.osgi.customermanagerconsumer/,4,true
+com.gamecenter.sa.osgi.gamecustomerservice,1.0.0.qualifier,file:/D:/Education/SA_Project/com.gamecenter.sa.osgi.gamecustomerservice/,4,true
 com.gamecenter.sa.osgi.gameservice,1.0.0.qualifier,file:/D:/Education/SA_Project/com.gamecenter.sa.osgi.gameservice/,4,true
 com.gamecenter.sa.osgi.managerconsumer,1.0.0.qualifier,file:/D:/Education/SA_Project/com.gamecenter.sa.osgi.managerconsumer/,4,true
 com.google.gson,2.8.9.v20220111-1409,file:/C:/Users/Pathum/.p2/pool/plugins/com.google.gson_2.8.9.v20220111-1409.jar,4,true
