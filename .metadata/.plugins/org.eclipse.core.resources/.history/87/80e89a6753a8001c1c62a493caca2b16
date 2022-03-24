@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: ServiceCenter
-Bundle-SymbolicName: ServiceCenter
-Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.gamecenter.center.CenterActivator
-Import-Package: com.gamecenter.client,
- org.osgi.framework
-Bundle-RequiredExecutionEnvironment: JavaSE-15

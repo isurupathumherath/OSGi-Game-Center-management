@@ -1,5 +1,0 @@
-package com.gamecenter.sa.osgi.datastore;
-
-public class DataStore {
-
-}

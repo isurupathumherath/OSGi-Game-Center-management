@@ -1,9 +1,0 @@
-INDEX VERSION 1.131+D:\Education\SA_Project\.metadata\.plugins\org.eclipse.jdt.core
-1271459746.index
-1603120023.index
-1744513478.index
-1178605809.index
-3763324599.index
-250302277.index
-1865797976.index
-2777944041.index

@@ -1,8 +1,0 @@
-package com.gamecenter.sa.osgi.datastore;
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class DataStore {
-
-}
