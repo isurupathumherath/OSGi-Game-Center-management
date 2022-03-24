@@ -1,6 +1,7 @@
 package com.gamecenter.sa.osgi.managerconsumer;
 
 import java.util.List;
+
 import java.util.Scanner;
 
 import org.osgi.framework.BundleActivator;

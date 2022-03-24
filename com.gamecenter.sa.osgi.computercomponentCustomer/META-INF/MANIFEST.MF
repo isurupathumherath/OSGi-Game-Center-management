@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ComputercomponentCustomer
+Bundle-SymbolicName: com.gamecenter.sa.osgi.computercomponentCustomer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.gamecenter.sa.osgi.computercomponentcustomer.CustomerConsumerActivator
+Bundle-Vendor: GAMECENTER
+Bundle-RequiredExecutionEnvironment: JavaSE-15
+Automatic-Module-Name: com.gamecenter.sa.osgi.computercomponentCustomer
+Import-Package: com.gamecenter.sa.osgi.componentBill,
+ com.gamecenter.sa.osgi.dataStore,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
